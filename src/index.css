@@ -1,0 +1,258 @@
+
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+input {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00BCD4;
+  color: white;
+}
+
+.welcomeUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+}
+
+.logout-button {
+  margin-left: 5px;
+  padding: 5px;
+  box-shadow: 0 0 15px 0 grey;
+  background-color: #fff;
+  border: 0 solid grey;
+  border-radius: 10px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigationBar {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.viewPage {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #E3F2FD;
+}
+
+.viewBox {
+  margin: 25px;
+  padding: 15px;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px -5px #aaa;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fdfdfd;
+}
+
+ .answer-button:not(.nohover):hover, .showScore:hover {
+  background-color: #fff;
+  box-shadow: initial;
+}
+
+.viewBox.small {
+  width: 500px;
+  align-items: center;
+}
+
+.newUserGreet {
+  font-size: 500%;
+  margin-top: 20px;
+}
+
+.userAvatar {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.userAvatar.small {
+  width: 100px;
+  height: 100px;
+}
+
+.userAvatar.tiny {
+  width: 5px;
+  height: 5px;
+}
+
+.details {
+  margin: 10px;
+  width: 400px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  flex: 3;
+}
+
+.userScores, .answers, .addQuestionForm, .login-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 120%;
+  flex: 4;
+  align-items: center;
+}
+
+.registerForm {
+  display: flex;
+  align-items: center;
+}
+
+.registerLabels {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.answer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer-button {
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  font-size: 100%;
+  padding: 15px;
+  box-shadow: 5px 5px 10px -5px #aaa;
+  background-color: #eee;
+}
+
+.answer-button.active {
+  box-shadow: 0 0 5px 0px #999;
+  background-color: #999;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.leaderboard li:nth-child(1) .viewBox {
+  border: 2px solid gold;
+}
+
+.leaderboard li:nth-child(2) .viewBox {
+  border: 2px solid silver;
+}
+
+.leaderboard li:nth-child(3) .viewBox {
+  border: 2px solid #cd7f32;
+}
+
+.showScore {
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  box-shadow: 5px 5px 10px -5px #aaa;
+  padding: 10px;
+  width: 40%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scoreLabel {
+  font-size: 75%;
+}
+
+.score {
+  font-size: 150%;
+}
+
+.arrow-back {
+  display: flex;
+  top: 20px;
+  left: 15px;
+  width: 50px;
+  height: 53px;
+  background-image: url('./icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  font-size: 0;
+}
+
+.notFound {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
