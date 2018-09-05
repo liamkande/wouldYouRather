@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
-
+import React from 'react'
 import View from './View'
 import NavigationBar from './NavigationBar'
 
 
-class Content extends Component {
-  render() {
+const Content  = props => {
+
     return (
       <div className='content page'>
         <NavigationBar />
         <View />
       </div>
     )
-  }
 }
 
 export default Content

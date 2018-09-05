@@ -1,15 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class NotFound extends Component {
-  render() {
-    const { location } = this.props
+const NotFound = props => {
 
     return (
       <div className='notFound'>
-        <h3>Your request: (<code>{location.pathname}</code>), could not be found. Please try again!</h3>
+        <h3>Your request: (<code>{props.location.pathname}</code>), could not be found. Please try again!</h3>
       </div>
     )
-  }
 }
 
 export default NotFound

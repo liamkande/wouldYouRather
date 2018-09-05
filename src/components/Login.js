@@ -92,11 +92,15 @@ class Login extends Component {
 
   render() {
     const { view, redirect } = this.state
-    const { from } = { from: { pathname: '/unanswered' } }
+    
 
     if (redirect === true) {
-      return <Redirect to={from} />
-    }
+        let { from } = '/unanswered'
+        if(this.props.location.state && this.props.location.state.from.pathname){
+          from=this.props.location.state.from.pathname
+        }
+        return <Redirect to={from} />
+      }
 
     const viewName = 'login'
     const title = 'Would you rather?'

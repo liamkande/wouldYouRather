@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 
-class NavigationButton extends Component {
-  render() {
+const NavigationButton  = props => {
+
     let title, link, alternativeLink
 
-    switch(this.props.page) {
+    switch(props.page) {
 
       case 'leaderboard' : {
         title = 'Leaderboard'
@@ -38,8 +38,8 @@ class NavigationButton extends Component {
     }
 
     const active =
-          ( this.props.location.pathname === link )
-          || ( this.props.location.pathname.toLowerCase().includes(alternativeLink) )
+          ( props.location.pathname === link )
+          || ( props.location.pathname.toLowerCase().includes(alternativeLink) )
             ? 'active'
             : ''
 
@@ -50,7 +50,7 @@ class NavigationButton extends Component {
         </Link>
       </div>
     )
-  }
+  
 }
 
 export default withRouter(NavigationButton)

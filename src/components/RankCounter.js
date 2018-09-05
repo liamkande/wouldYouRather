@@ -1,20 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class RankCounter extends Component {
-  render() {
-    const { label, score } = this.props
+const RankCounter = props => {
 
     return (
       <div className='showScore'>
         <div className='scoreLabel'>
-          {label}
+          {props.label}
         </div>
         <div className='score'>
-          {score}
+          {props.score}
         </div>
       </div>
     )
-  }
 }
 
 export default RankCounter

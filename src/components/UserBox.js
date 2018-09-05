@@ -1,23 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class UserBox extends Component {
-  render() {
-    const { onClick, title, avatarURL } = this.props
+const UserBox  = props => {
 
     return (
-      <div className='viewBox small' onClick={onClick}>
+      <div className='viewBox small' onClick={props.onClick}>
         <div
           className='userAvatar small'
           style={{
-            backgroundImage: `url(${avatarURL})`
+            backgroundImage: `url(${props.avatarURL})`
           }} >
         </div>
         <div className='title'>
-          {title}
+          {props.title}
         </div>
       </div>
     )
-  }
 }
 
 export default UserBox

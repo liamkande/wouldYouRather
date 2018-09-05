@@ -1,22 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import RankCounter from './RankCounter'
 
-class Rank extends Component {
-  render() {
-    const { questionCount, answerCount } = this.props
+const Rank = props => {
 
     return (
       <div className='userScores'>
         <RankCounter
           label='Questions asked'
-          score={questionCount} />
+          score={props.questionCount} />
         <RankCounter
           label='Questions answered'
-          score={answerCount} />
+          score={props.answerCount} />
       </div>
     )
-  }
 }
 
 export default Rank

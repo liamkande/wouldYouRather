@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import NavigationButton from './NavigationButton'
 
-class NavigationBar extends Component {
-  render() {
+const NavigationBar = props => {
 
     return (
       <div className='navigationBar'>
@@ -13,7 +12,6 @@ class NavigationBar extends Component {
         <NavigationButton page={'leaderboard'} />
       </div>
     )
-  }
 }
 
 export default NavigationBar
