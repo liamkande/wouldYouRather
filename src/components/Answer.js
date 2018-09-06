@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 
 class Answer extends Component {
   render() {
-    const { optionText, onClick } = this.props
+    const {  optionText, onClick, isActive, answered } = this.props
 
     return (
       <Button

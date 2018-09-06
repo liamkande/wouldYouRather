@@ -50,7 +50,7 @@ const NavigationButton  = props => {
         </Link>
       </div>
     )
-  
+
 }
 
 export default withRouter(NavigationButton)

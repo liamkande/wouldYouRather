@@ -30,7 +30,7 @@ class View extends Component {
             path='/unanswered'
             component={Unanswered} />
           <AuthedRoute
-            path='/questions/:id'
+            path='/question/:id'
             component={Unanswered} />
           <AuthedRoute
             path='/answered'

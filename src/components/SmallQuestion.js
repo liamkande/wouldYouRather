@@ -5,12 +5,13 @@ import UserBox from './UserBox'
 
 class SmallQuestion extends Component {
   render() {
+    const title = 'Would you rather?'
     const { onClick, avatarURL } = this.props
 
     return (
       <UserBox
         onClick={onClick}
-        title='Would you rather?'
+        title={title}
         avatarURL={avatarURL} />
     )
   }
